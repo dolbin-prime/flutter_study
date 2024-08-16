@@ -1,4 +1,4 @@
-# flutter_note
+# Flutter Note
 Notes for flutter that I've learned.
 
 ## Element
