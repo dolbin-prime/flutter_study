@@ -1,3 +1,4 @@
-# flutter_debounce_study
-
-A new Flutter project.
+# Flutter Debounce study
+## Purpose
+- To study debounce feature with Flutter.
+- Riverpod is used in this study.
