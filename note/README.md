@@ -7,7 +7,7 @@ Notes for flutter that I've learned.
 이 Element를 어떻게 나타낼(rendering 할) 지에 대한 정보를 가지고 있는 것이 RenderObject이다.
 우리가 사용하는 Widget은 전부 Element로 변환되며 Widget 트리에서의 위치 등에 대한 정보를 가지고 있다.
 Widget은 우리가 쉽게 앱을 만들 수 있도록 Flutter가 제공하는 것이다.
-'Everything is Widget!' 이라는 문구는 Flutter 팀이 개발자들은 Widget만으로 쉽게 앱을 만들 수 있게 하려는 염원이 담긴 말일 수도 있겠다.
+'Everything is a Widget!' 이라는 문구는 Flutter 팀이 개발자들은 Widget만으로 쉽게 앱을 만들 수 있게 하려는 염원이 담긴 말일 수도 있겠다.
 ### BuildContext
 BuildContext는 사실 Element 객체이며 현재 WidgetBuilder 함수가 반환하는 Widget의 '부모' Element이다.
 그래서 WidgetBuilder 안에서 생성하는 무언가를 같은 함수 안에서 BuildContext를 통해 접근하려고 하면(예를 들어 Theme.of(context) 등) 실패하는 것이다.
