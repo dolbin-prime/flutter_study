@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+    <div>
+        <input type="number" id="input"/>
+        <button id="button">factorial</button>
+    </div>
+    <p id="result"></p>
+  </body>
+  <script>
+        WebAssembly.instantiateStreaming(fetch('fac.wasm'), {}).then(
+            (obj) => {
+                const { fac } = obj.instance.exports;
+                let input = document.getElementById('input');
+                let button = document.getElementById('button');
+
+                button.addEventListener('click', () => {
+                    if (input.value){
+                        document.getElementById('result').innerHTML = fac(input.value);
+                    }
+                })
+            }
+        );
+  </script>
+</html>
